@@ -213,26 +213,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201304071932597_InitialMigration.cs" />
-    <Compile Include="Migrations\201304071932597_InitialMigration.Designer.cs">
-      <DependentUpon>201304071932597_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304071937144_AddRoomTypeURL.cs" />
-    <Compile Include="Migrations\201304071937144_AddRoomTypeURL.Designer.cs">
-      <DependentUpon>201304071937144_AddRoomTypeURL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304071939165_AddRoomTypeURL2.cs" />
-    <Compile Include="Migrations\201304071939165_AddRoomTypeURL2.Designer.cs">
-      <DependentUpon>201304071939165_AddRoomTypeURL2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304071944373_FixRoomTypeURL.cs" />
-    <Compile Include="Migrations\201304071944373_FixRoomTypeURL.Designer.cs">
-      <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304072012548_InitialSchema.cs" />
-    <Compile Include="Migrations\201304072012548_InitialSchema.Designer.cs">
-      <DependentUpon>201304072012548_InitialSchema.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Hotel.cs" />
@@ -384,23 +364,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201304071932597_InitialMigration.resx">
-      <DependentUpon>201304071932597_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304071937144_AddRoomTypeURL.resx">
-      <DependentUpon>201304071937144_AddRoomTypeURL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304071939165_AddRoomTypeURL2.resx">
-      <DependentUpon>201304071939165_AddRoomTypeURL2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304071944373_FixRoomTypeURL.resx">
-      <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304072012548_InitialSchema.resx">
-      <DependentUpon>201304072012548_InitialSchema.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
