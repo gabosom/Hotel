@@ -10,9 +10,9 @@ using HotelEden.Migrations;
 
 namespace HotelEden.App_Start
 {
-    //public class HotelContextInitializer : MigrateDatabaseToLatestVersion<HotelContext, Configuration>
+    public class HotelContextInitializer : MigrateDatabaseToLatestVersion<HotelContext, Configuration>
     //public class HotelContextInitializer : DropCreateDatabaseAlways<HotelContext>
-    public class HotelContextInitializer : DontDropDbJustCreateTablesIfModelChanged<HotelContext>
+    //public class HotelContextInitializer : DontDropDbJustCreateTablesIfModelChanged<HotelContext>
     {
     }
 }
