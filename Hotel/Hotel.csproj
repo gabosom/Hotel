@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Devtalk.EF.CodeFirst">
+      <HintPath>..\packages\EFCodeFirst.CreateTablesOnly.1.0.2\lib\Devtalk.EF.CodeFirst.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
@@ -193,13 +196,16 @@
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DontDropDbJustCreateTablesIfModelChangedStart.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\HotelContextInitializer.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Seeder.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\RoomController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoomTypeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
@@ -207,6 +213,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304071932597_InitialMigration.cs" />
+    <Compile Include="Migrations\201304071932597_InitialMigration.Designer.cs">
+      <DependentUpon>201304071932597_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304071937144_AddRoomTypeURL.cs" />
+    <Compile Include="Migrations\201304071937144_AddRoomTypeURL.Designer.cs">
+      <DependentUpon>201304071937144_AddRoomTypeURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304071939165_AddRoomTypeURL2.cs" />
+    <Compile Include="Migrations\201304071939165_AddRoomTypeURL2.Designer.cs">
+      <DependentUpon>201304071939165_AddRoomTypeURL2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201304071944373_FixRoomTypeURL.cs" />
+    <Compile Include="Migrations\201304071944373_FixRoomTypeURL.Designer.cs">
+      <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Hotel.cs" />
     <Compile Include="Models\HotelContext.cs" />
@@ -283,6 +306,11 @@
     <Content Include="Areas\Admin\Views\Room\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Room\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Room\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\RoomType\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\RoomType\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\RoomType\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\RoomType\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\RoomType\Delete.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\Template\index_04.gif" />
     <Content Include="Images\Template\index_04.png" />
@@ -352,6 +380,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201304071932597_InitialMigration.resx">
+      <DependentUpon>201304071932597_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304071937144_AddRoomTypeURL.resx">
+      <DependentUpon>201304071937144_AddRoomTypeURL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304071939165_AddRoomTypeURL2.resx">
+      <DependentUpon>201304071939165_AddRoomTypeURL2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304071944373_FixRoomTypeURL.resx">
+      <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

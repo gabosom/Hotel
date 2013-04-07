@@ -1,4 +1,5 @@
 ﻿using HotelEden.App_Start;
+using HotelEden.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -29,6 +30,7 @@ namespace HotelEden
             //adding DB initializer
             
             Database.SetInitializer(new HotelContextInitializer());
+            Seeder.Seed();
         }
     }
 }

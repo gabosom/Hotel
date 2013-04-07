@@ -180,6 +180,7 @@ namespace HotelEden.Models
         public double Rate { get; set; }
         public string Description { get; set; }
         public int MaxGuestNo { get; set; }
+        public string URL { get; set; }
     }
     #endregion
 }
