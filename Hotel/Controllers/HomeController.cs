@@ -29,12 +29,6 @@ namespace HotelEden.Controllers
 
         public ActionResult About()
         {
-            DateTime CIn = DateTime.Now.Subtract(new TimeSpan(2, 0, 0, 0));
-            DateTime COut = DateTime.Now;
-            int NP = 2;
-
-            List<RoomType> list = _reservationRepository.SearchAvailabity(CIn, COut, NP);
-
             return View();
         }
 
