@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    @Html.Partial("HomeReservation")
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")
+    <script src="~/Scripts/Home.js" type="text/javascript"></script>
+}
+
+    <article>
+        <h1>Bienvenido a Ba&ntilde;os!</h1>
+        <p>
+            Que le ponemos aqui?
+        </p>
+
+        <h1>Hostal El Eden</h1>
+        <ul>
+			<li>Excelente ubicaci&oacute;n</li>
+			<li>TV en cada habitaci&oacute;n</li>
+			<li>Atenci&oacute;n a hu&eacute;spedes</li>			    
+            <li><span style="font-weight:bold">Que mas agregamos aqui???</span></li>
+		</ul>
+    </article>
+
+<aside>
+    <h3>Ubicaci&oacute;n</h3>
+    <p>Estamos localizados en el centro de Ba&ntilde;os</p>
+    <dl class="contacts-list">
+	    <dt>Calle y Numero??</dt>
+	    <dd>+(593)-274-0616</dd>
+	    <!--<dd>1-800-542-6448</dd>-->
+    </dl>
+</aside>
