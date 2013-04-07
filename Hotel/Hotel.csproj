@@ -229,6 +229,10 @@
     <Compile Include="Migrations\201304071944373_FixRoomTypeURL.Designer.cs">
       <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304072012548_InitialSchema.cs" />
+    <Compile Include="Migrations\201304072012548_InitialSchema.Designer.cs">
+      <DependentUpon>201304072012548_InitialSchema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Hotel.cs" />
@@ -393,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304071944373_FixRoomTypeURL.resx">
       <DependentUpon>201304071944373_FixRoomTypeURL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304072012548_InitialSchema.resx">
+      <DependentUpon>201304072012548_InitialSchema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

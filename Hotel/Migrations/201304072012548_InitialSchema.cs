@@ -3,15 +3,15 @@ namespace HotelEden.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialMigration : DbMigration
+    public partial class InitialSchema : DbMigration
     {
         public override void Up()
         {
-
         }
         
         public override void Down()
         {
+            
         }
     }
 }
