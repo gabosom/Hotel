@@ -10,6 +10,8 @@ namespace HotelEden.App_Start
     {
         public static void Seed()
         {
+            HotelContext context = new HotelContext();
+
             //Adding roomtypes
             List<RoomType> roomTypes = new List<RoomType>{
                                            new RoomType{
